@@ -43,6 +43,13 @@ const Comment = ({ commentsData, commentId, onAdd, showReplay }) => {
                     commentId={repliId}
                     commentsData={commentsData}
                     showReplay={false}
+                    {/*                 
+                    It will allow nested comments up nthe level
+                    showReplay={true}
+                    onAdd={(comment, commentId) => {
+                      onAdd(comment, commentId);
+                      toggleComment(!showAddComment);
+                    }} */}
                   />
                 );
               })}
